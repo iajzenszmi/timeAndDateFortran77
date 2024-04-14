@@ -1,0 +1,207 @@
+	.file	"timed.f"
+	.text
+	.section	.rodata
+.LC0:
+	.string	"timed.f"
+.LC1:
+	.ascii	"(a,2x,a,2x,a)"
+.LC2:
+	.ascii	"(8i5)"
+	.text
+	.type	MAIN__, @function
+MAIN__:
+.LFB0:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$672, %rsp
+	movq	$4, -576(%rbp)
+	movq	$0, -592(%rbp)
+	movq	$0, -584(%rbp)
+	movq	$4, -592(%rbp)
+	movb	$1, -580(%rbp)
+	movb	$1, -579(%rbp)
+	movq	$1, -560(%rbp)
+	movq	$8, -552(%rbp)
+	movq	$1, -568(%rbp)
+	leaq	-64(%rbp), %rax
+	movq	%rax, -608(%rbp)
+	movq	$-1, -600(%rbp)
+	leaq	-608(%rbp), %rcx
+	leaq	-69(%rbp), %rdx
+	leaq	-18(%rbp), %rsi
+	leaq	-8(%rbp), %rax
+	subq	$8, %rsp
+	pushq	$5
+	movl	$10, %r9d
+	movl	$8, %r8d
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	_gfortran_date_and_time@PLT
+	addq	$16, %rsp
+	leaq	-69(%rbp), %rdx
+	leaq	-8(%rbp), %rax
+	subq	$8, %rsp
+	pushq	$5
+	movl	$0, %r9d
+	movl	$8, %r8d
+	movl	$0, %ecx
+	movl	$0, %esi
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	_gfortran_date_and_time@PLT
+	addq	$16, %rsp
+	leaq	-18(%rbp), %rax
+	subq	$8, %rsp
+	pushq	$0
+	movl	$10, %r9d
+	movl	$0, %r8d
+	movl	$0, %ecx
+	movl	$0, %edx
+	movq	%rax, %rsi
+	movl	$0, %edi
+	movl	$0, %eax
+	call	_gfortran_date_and_time@PLT
+	addq	$16, %rsp
+	movq	$4, -576(%rbp)
+	movq	$0, -592(%rbp)
+	movq	$0, -584(%rbp)
+	movq	$4, -592(%rbp)
+	movb	$1, -580(%rbp)
+	movb	$1, -579(%rbp)
+	movq	$1, -560(%rbp)
+	movq	$8, -552(%rbp)
+	movq	$1, -568(%rbp)
+	leaq	-64(%rbp), %rax
+	movq	%rax, -608(%rbp)
+	movq	$-1, -600(%rbp)
+	leaq	-608(%rbp), %rax
+	subq	$8, %rsp
+	pushq	$0
+	movl	$0, %r9d
+	movl	$0, %r8d
+	movq	%rax, %rcx
+	movl	$0, %edx
+	movl	$0, %esi
+	movl	$0, %edi
+	movl	$0, %eax
+	call	_gfortran_date_and_time@PLT
+	addq	$16, %rsp
+	leaq	.LC0(%rip), %rax
+	movq	%rax, -600(%rbp)
+	movl	$11, -592(%rbp)
+	leaq	.LC1(%rip), %rax
+	movq	%rax, -528(%rbp)
+	movq	$13, -520(%rbp)
+	movl	$4096, -608(%rbp)
+	movl	$6, -604(%rbp)
+	leaq	-608(%rbp), %rax
+	movq	%rax, %rdi
+	call	_gfortran_st_write@PLT
+	leaq	-8(%rbp), %rcx
+	leaq	-608(%rbp), %rax
+	movl	$8, %edx
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	call	_gfortran_transfer_character_write@PLT
+	leaq	-18(%rbp), %rcx
+	leaq	-608(%rbp), %rax
+	movl	$10, %edx
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	call	_gfortran_transfer_character_write@PLT
+	leaq	-69(%rbp), %rcx
+	leaq	-608(%rbp), %rax
+	movl	$5, %edx
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	call	_gfortran_transfer_character_write@PLT
+	leaq	-608(%rbp), %rax
+	movq	%rax, %rdi
+	call	_gfortran_st_write_done@PLT
+	leaq	.LC0(%rip), %rax
+	movq	%rax, -600(%rbp)
+	movl	$12, -592(%rbp)
+	leaq	.LC2(%rip), %rax
+	movq	%rax, -528(%rbp)
+	movq	$5, -520(%rbp)
+	movl	$4096, -608(%rbp)
+	movl	$6, -604(%rbp)
+	leaq	-608(%rbp), %rax
+	movq	%rax, %rdi
+	call	_gfortran_st_write@PLT
+	movq	$4, -640(%rbp)
+	movq	$0, -656(%rbp)
+	movq	$0, -648(%rbp)
+	movq	$4, -656(%rbp)
+	movb	$1, -644(%rbp)
+	movb	$1, -643(%rbp)
+	movq	$1, -624(%rbp)
+	movq	$8, -616(%rbp)
+	movq	$1, -632(%rbp)
+	leaq	-64(%rbp), %rax
+	movq	%rax, -672(%rbp)
+	movq	$-1, -664(%rbp)
+	leaq	-672(%rbp), %rsi
+	leaq	-608(%rbp), %rax
+	movl	$0, %ecx
+	movl	$4, %edx
+	movq	%rax, %rdi
+	call	_gfortran_transfer_array_write@PLT
+	leaq	-608(%rbp), %rax
+	movq	%rax, %rdi
+	call	_gfortran_st_write_done@PLT
+	nop
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	MAIN__, .-MAIN__
+	.globl	main
+	.type	main, @function
+main:
+.LFB1:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$16, %rsp
+	movl	%edi, -4(%rbp)
+	movq	%rsi, -16(%rbp)
+	movq	-16(%rbp), %rdx
+	movl	-4(%rbp), %eax
+	movq	%rdx, %rsi
+	movl	%eax, %edi
+	call	_gfortran_set_args@PLT
+	leaq	options.5.0(%rip), %rax
+	movq	%rax, %rsi
+	movl	$7, %edi
+	call	_gfortran_set_options@PLT
+	call	MAIN__
+	movl	$0, %eax
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE1:
+	.size	main, .-main
+	.section	.rodata
+	.align 16
+	.type	options.5.0, @object
+	.size	options.5.0, 28
+options.5.0:
+	.long	2116
+	.long	4095
+	.long	0
+	.long	1
+	.long	1
+	.long	0
+	.long	31
+	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+	.section	.note.GNU-stack,"",@progbits
