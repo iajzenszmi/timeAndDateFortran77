@@ -1,0 +1,18 @@
+ian@ian-Latitude-E7440:~$ gfortran timed.f -ffree-form
+ian@ian-Latitude-E7440:~$ ./a.out
+20240415  060132.939  +1000
+ 2024    4   15  600    6    1   32  939
+ian@ian-Latitude-E7440:~$ cat timed.f
+program test_time_and_date
+    character(8)  :: date
+    character(10) :: time
+    character(5)  :: zone
+    integer,dimension(8) :: values
+    ! using keyword arguments
+    call date_and_time(date,time,zone,values)
+    call date_and_time(DATE=date,ZONE=zone)
+    call date_and_time(TIME=time)
+    call date_and_time(VALUES=values)
+    print '(a,2x,a,2x,a)', date, time, zone
+    print '(8i5)', values
+end program test_time_and_date
